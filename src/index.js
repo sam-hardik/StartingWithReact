@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+const sysDate = new Date();
+let luckyNumber=Math.floor(Math.random() * 100); 
 ReactDOM.render(
-  <h1>Hello Welcome to React!</h1>,
+  <>
+  <h1>Hello Welcome to React!</h1>
+  <h3>{`Today is ${sysDate}`}</h3>
+  <p>{`Your Lucky Number is : ${luckyNumber}`}</p>
+  <img src="https://picsum.photos/536/354" alt=""></img>
+  </>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
