@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import LuckyNumber from './MyComponents/LuckyNumber';
 import "bootstrap/dist/css/bootstrap.min.css";
-//import App from './App';
 import Table from './MyComponents/assignmentOne';
 import * as serviceWorker from './serviceWorker';
 const sysDate = new Date();
