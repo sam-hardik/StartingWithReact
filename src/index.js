@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import LuckyNumber from './MyComponents/LuckyNumber';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Table from './MyComponents/assignmentOne';
+import TableApp from './MyComponents/TableApp'
 import * as serviceWorker from './serviceWorker';
-const sysDate = new Date();
 
+const sysDate = new Date();
 ReactDOM.render(
   <>
   <h1 className ="heading">Hello Welcome to React!</h1>
   <h3 id="date">{`Today is ${sysDate}`}</h3>
   <LuckyNumber/>
-  <Table/>  
+  <TableApp/>  
   </>,
-  document.getElementById('root')
-);
+  document.getElementById('root'));
 serviceWorker.unregister();
