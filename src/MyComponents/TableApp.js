@@ -28,7 +28,8 @@ import MyForm from './form';
         return( <tr>
         <td>{empl.eName}</td>
         <td>{empl.eJob}</td>
-        <td>{<ReactBootStrap.Button variant="danger" size="sm"  onClick={this.removeEmployeBtn.bind(this,index)} >Remove</ReactBootStrap.Button>}</td>
+        <td>{<ReactBootStrap.Button variant="danger" size="sm" 
+         onClick={this.removeEmployeBtn.bind(this,index)} >Remove</ReactBootStrap.Button>}</td>
         </tr>
         )
     }
